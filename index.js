@@ -28,10 +28,12 @@ const os = require('os');
 
 // Our dependencies are all taken care of. Let's take care of some configuration!
 
-// Let's save our long-term-memory to the desktop.
+// Let's configure where we want to save our long-term-memory.
+// We'll put it in a folder on the desktop.
 const saveDirectory = path.join(os.homedir(), 'Desktop', 'paper-detector', 'memory.txt');
-// what we did there is simply generate a {string} file path such as 'C:\Users\Chris\Desktop\paper-detector\memory.txt'
+// what we did there is simply generate a {string} file path, example: 'C:\Users\Chris\Desktop\paper-detector\memory.txt'
 // we will use this file path later.
+
 
 
 
@@ -47,7 +49,7 @@ request
     // Now we need to handle any errors that may have occured while getting the news feed.
     if (err) {
     
-      // this is VERY simple error handling. Better error handling would notify the human or something.
+      // this is VERY simple error handling. Better error handling would notify the human by sending an e-mail or something.
       return console.log(err);
       
     }
@@ -60,6 +62,6 @@ request
     // We will keep things simple in this example and assume that clicking an article is all it takes to claim the article.
     
     // Ok let's scrape some HTML and get a list of articles.
-    
+    cheerio
     
   });
