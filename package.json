@@ -1,0 +1,25 @@
+{
+  "name": "paper-detector",
+  "version": "1.0.0",
+  "description": "detect scientific papers and claim them",
+  "main": "index.js",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "request": "^2.87.0",
+    "superagent": "^3.8.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/insanity54/paper-detector.git"
+  },
+  "author": "Chris Grimmett <chris@grimtech.net>",
+  "license": "Unlicense",
+  "bugs": {
+    "url": "https://github.com/insanity54/paper-detector/issues"
+  },
+  "homepage": "https://github.com/insanity54/paper-detector#readme"
+}
